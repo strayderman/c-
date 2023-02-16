@@ -62,27 +62,30 @@
 // string FB = "FizzBuzz,";
 
 
-// for (int i = 0; i < 15; i++)// Заполнили массив 
-// {
-//     int a = i++;
-//    if (a % 3 == 0 && a % 5 == 0) // Проверяем кратность и 3 и 5)
-//         {
-//         Console.Write("FizzBuzz,");
-//         }
-//     if(a % 3 == 0)    // Проверяем кратность 3)
-//     { 
-//         Console.Write("Fizz,");
-//     }
-//          if(a % 5 == 0)    // Проверяем кратность 5)
-//         {
-//         Console.Write("Buzz,");
-//         }
-          
-//      else
-//         {
-//             Console.Write(a + ",");
-//         }
-// }
-int a = 6;
-int b = 3;
-Console.Write (a % 3 );
+for (int i = 1; i < 50; i++)// Заполнили массив 
+{
+    int a = i;
+    if (a % 3 == 0 && a % 5 == 0) // Проверяем кратность и 3 и 5)
+        {
+        Console.Write("FizzBuzz,");
+        }
+    if(a % 5 == 0)    // Проверяем кратность 3)
+        { 
+        Console.Write("Buzz,");
+        }
+    if (a % 3 == 0)
+    {
+        Console.Write("Fizz,");
+    }
+    // if(a % 5 == 0)    // Проверяем кратность 5)
+    //     {
+    //     Console.Write("Buzz,");
+    //     }
+          else
+        {
+            Console.Write(a + ",");
+        }
+}
+// int a = 12;
+// //int b = 3;
+// Console.Write (a % 3 );
