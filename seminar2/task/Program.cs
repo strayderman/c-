@@ -82,6 +82,7 @@ for (int i = 1; i < 101; i++)// Заполнили массив
         Console.Write(i + ",");
     }
 }
+
 // int a = 12;
 // //int b = 3;
 // Console.Write (a % 3 );
