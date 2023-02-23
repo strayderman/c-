@@ -21,8 +21,12 @@
 
 int Pow(int a, int b)
 {
-    int c = 1;
-    
+    int res = 1;
+    for(int i = 1; i <= b; i++)
+    {
+        res = res * a;
+    }
+    Console.WriteLine(a + " в степени " + b + " = " + res);
 }
 
 Console.WriteLine("Введите 1-е число: ");
