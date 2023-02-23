@@ -4,11 +4,17 @@
 // 9012 -> 12
 
 
-int Sum(namber)
+int getSum(int n)
 {
-    while (num > 0)
+    int sum = 0;
+    while (n != 0)
     {
-        int z =                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     num / 10
+        sum = sum + n % 10;
+        n = n / 10; 
     }
-
+    return sum;
 }
+
+Console.WriteLine("Введите число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(getSum(a));
