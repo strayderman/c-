@@ -17,21 +17,25 @@
 
 // Console.WriteLine("Результат возведения 1-го числа в степень 2-го = " + aPowerb(a1, b1));
 
-// Решение №2
+int numberA = ReadInt("Введите число: ");
+int numberB = ReadInt("Введите степень: ");
+ToDegree(numberA, numberB);
 
-int Pow(int a, int b)
+
+// Функция возведения в степень
+void ToDegree(int a, int b)
 {
-    int res = 1;
-    for(int i = 1; i <= b; i++)
+    int result = 1;
+    for (int i = 1; i <= b; i++)
     {
-        res = res * a;
+        result = result * a;
     }
-    Console.WriteLine(a + " в степени " + b + " = " + res);
+    Console.WriteLine(a + " в степени " + b + " = " + result);
 }
 
-Console.WriteLine("Введите 1-е число: ");
-int a1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите 2-е число: ");
-int b1 = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine("Результат возведения 1-го числа в степень 2-го = " + Pow(a1, b1));
+// Функция ввода
+int ReadInt(string message)
+{
+    Console.WriteLine(message);
+    return Convert.ToInt32(Console.ReadLine());
+}

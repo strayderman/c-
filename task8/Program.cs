@@ -11,3 +11,6 @@ for(int i = 1; i <= N; i++)
     //Console.WriteLine("Четные числа: " );
     Console.Write(i + " ");}
 }
+
+
+
