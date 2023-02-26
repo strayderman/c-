@@ -17,4 +17,5 @@ int getSum(int n)
 
 Console.WriteLine("Введите число: ");
 int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(getSum(a));
+// Console.WriteLine();
+Console.WriteLine("Сумма чисел = " + getSum(a));
