@@ -12,12 +12,15 @@ void FillArray(int[] mass)
         Console.Write(mass[i] + " ");
     }
 }
-int FindSum(int sum, int[]array)
+int FindSum(int[]array)
 {
     int sum1 = 0;
     for (int j = 1; j < array.Length; j= j+2)
     {
-        sum1 = sum1 + array[j];
+        if (array[j] > 0)
+        {
+            sum1 = sum1 + array[j];
+        }
     }
     return sum1;
 } 
@@ -26,5 +29,5 @@ int a = Convert.ToInt32(Console.ReadLine());
 int[] arr = new int[a];
 FillArray(arr);
 Console.WriteLine();
-FindSum(sum1, arr);
-Console.WriteLine();
+
+Console.WriteLine("Сумма нечетных элементов = " + FindSum(arr));

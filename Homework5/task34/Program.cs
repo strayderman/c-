@@ -13,7 +13,7 @@ void FillArray(int[] mass)
     }
 }
 // Метод проверки четных чисел
-void FindIndex(int[] massindex)
+FindIndex(int[] massindex)
 {
 //int count = 0;
     for (int j = 0; j < massindex.Length; j++)
@@ -22,18 +22,16 @@ void FindIndex(int[] massindex)
         {
             int count = j++;
             Console.WriteLine(count);
-
         }
     }
-//return count;
+return count;
 }
-
 
 Console.WriteLine("Введите длинну массива");
 int a = Convert.ToInt32(Console.ReadLine());
 int[] arr = new int[a];
 FillArray(arr);
 Console.WriteLine();
-FindIndex(arr);
+Console.WriteLine(FindIndex(arr));
 
 
