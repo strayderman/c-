@@ -13,15 +13,15 @@ void FillArray(int[] mass)
     }
 }
 // Метод проверки четных чисел
-FindIndex(int[] massindex)
+int FindIndex(int[] massindex)
 {
-//int count = 0;
+int count = 0;
     for (int j = 0; j < massindex.Length; j++)
     {
                 if (massindex[j] % 2 == 0)
         {
-            int count = j++;
-            Console.WriteLine(count);
+            count = j++;
+            //Console.WriteLine(count);
         }
     }
 return count;

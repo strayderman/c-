@@ -9,7 +9,7 @@ void FillArray(int[] mass)
     for (int i = 0; i < mass.Length; i++)
     {
         mass[i] = new Random().Next(-10, 20);
-        Console.Write(mass[i] + " ");
+        Console.Write($"[{mass[i]}] ");
     }
 }
 int FindSum(int[]array)
