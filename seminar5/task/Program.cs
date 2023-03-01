@@ -196,8 +196,8 @@ int[] GetArray(int[] massiv){
     return massiv1;
 }
 
-void DeepCopy(){
-
+void DeepCopy()
+{
     int[] massiv = new int[10];
     FillArray(massiv); // Заполнение массива
     System.Console.WriteLine("\nНаш массив:");

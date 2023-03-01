@@ -12,16 +12,16 @@ void FillArray(int[] mass)
                 Console.Write (mass[i] + " ");
     }
 }
-// Метод проверки четных чисел
-int FindIndex(int[] massindex)
+// Метод проверки чисел на четность
+int FindEvenNumber(int[] massindex)
 {
 int count = 0;
     for (int j = 0; j < massindex.Length; j++)
     {
                 if (massindex[j] % 2 == 0)
         {
-            count = j++;
-            //Console.WriteLine(count);
+            count = count + 1;
+            //Console.WriteLine($"Индекс четного числа  {count}");
         }
     }
 return count;
@@ -32,6 +32,6 @@ int a = Convert.ToInt32(Console.ReadLine());
 int[] arr = new int[a];
 FillArray(arr);
 Console.WriteLine();
-Console.WriteLine(FindIndex(arr));
+Console.WriteLine(FindEvenNumber(arr));
 
 

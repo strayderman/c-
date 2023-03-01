@@ -30,4 +30,4 @@ int[] arr = new int[a];
 FillArray(arr);
 Console.WriteLine();
 
-Console.WriteLine("Сумма нечетных элементов = " + FindSum(arr));
+Console.WriteLine("Сумма элементов, стоящих на нечётных позициях массива = " + FindSum(arr));
