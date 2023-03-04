@@ -51,13 +51,13 @@ void PrintMatrix(int[,] matrix){
     }
 }
 
-void Task48(){
-    int rows = GetRows();
-    int cols = GetCols();
-    int[,] matrix = new int[rows, cols];
-    FillArray(matrix);
-    PrintMatrix(matrix);
-}
+// void Task48(){
+//     int rows = GetRows();
+//     int cols = GetCols();
+//     int[,] matrix = new int[rows, cols];
+//     FillArray(matrix);
+//     PrintMatrix(matrix);
+// }
 
 //Task48();
 
@@ -94,16 +94,16 @@ int[,] GetMatrixEvenRowColsToPow(int[,] matrix){
 }
 
 
-void Task49(){
-    int rows = GetRows();
-    int cols = GetCols();
-    int[,] matrix = new int[rows, cols];
-    FillMatrix(matrix, 1, 50);
-    PrintMatrix(matrix);
-    Console.WriteLine();
-    GetMatrixEvenRowColsToPow(matrix);
-    PrintMatrix(matrix);
-}
+// void Task49(){
+//     int rows = GetRows();
+//     int cols = GetCols();
+//     int[,] matrix = new int[rows, cols];
+//     FillMatrix(matrix, 1, 50);
+//     PrintMatrix(matrix);
+//     Console.WriteLine();
+//     GetMatrixEvenRowColsToPow(matrix);
+//     PrintMatrix(matrix);
+// }
 
 //Task49();
 
