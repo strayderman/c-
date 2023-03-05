@@ -7,26 +7,20 @@
 
 
 
-double FindX(int k, int b, int k3, int b3)
+double FindX(int k1, int b1, int k2, int b2)
 {
-    double x = (b3 - b) / (k - k3); 
-return x;
+    double x1 = b2 - b1;
+    double x2 = k1 - k2;
+    double x = x2 / x1;
+    return x;
 }
 
-double FindY(Double FindX,int k1, int b1)
+double FindY(int k1, Double FindX, int b1)
 {
-   double y = k1*FindX + b1;
-return y;
+    double y = k1 * FindX + b1;
+    return y;
 }
 
-// void task43()
-// {
-//     double X = FindX();
-//     double Y = FindY();
-//     Console.WriteLine(X, Y);
-// }
-
-// task43();
 
 Console.WriteLine("Введите координаты 1-й прямой: ");
 Console.Write("1-я точка >>> ");
@@ -39,3 +33,6 @@ Console.Write("1-я точка >>> ");
 int b2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("2-я точка >>> ");
 int k2 = Convert.ToInt32(Console.ReadLine());
+double X = FindX(b1, k1, b2, k2);
+double Y = FindY(k1, X, b1);
+Console.WriteLine($"({X};{Y})");
