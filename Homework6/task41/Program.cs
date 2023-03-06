@@ -35,7 +35,6 @@ int FindElements(int[] massiv)
     return count;
 }
 
-
 Console.Write("Введите количество элементов:\t ");
     int elemenscount = int.Parse(Console.ReadLine()!);
     int[] myArr = new int[elemenscount];
