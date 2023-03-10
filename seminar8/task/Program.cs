@@ -42,7 +42,7 @@
 
 
 
-Эльвира 21:39
+
 Console.Write("Введите число: ");
 int number = int.Parse(Console.ReadLine());
 int sum = 0;
