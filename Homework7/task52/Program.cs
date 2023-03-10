@@ -50,6 +50,15 @@ void PrintMatrix(int[,] mat)
     }
 }
 
+void PrintMat(double[] mat)
+{
+    for (int i = 0; i < mat.Length; i++)
+        {
+            Console.Write($"{mat[i]}\t");
+        }
+        Console.WriteLine();
+}
+
 double[] SumArray(int[,] matrixx)
 {
     double[] result = new double[matrixx.GetLength(1)];
@@ -72,7 +81,9 @@ void Task52()
     FillMatrix(matrix);
     PrintMatrix(matrix);
     SumArray(matrix);
+    double[] array = SumArray(matrix);
+    Console.Write($" Среднее арифметическое каждого столбца ");
     Console.WriteLine();
-    Console.Write($" Среднее арифметическое каждого столбца = {SumArray(matrix)}");
+     PrintMat(array);
 }
 Task52();
