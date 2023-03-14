@@ -65,6 +65,6 @@ void Task56()
     FillMatrix(matrix);
     PrintMatrix(matrix);
     GetStringSum(matrix);
-    Console.WriteLine($"Индекс строки с наименьшей суммой чисел - {GetStringSum(matrix)+1}");
+    Console.WriteLine($"Индекс строки с наименьшей суммой чисел - {GetStringSum(matrix)}");
 }
 Task56();
