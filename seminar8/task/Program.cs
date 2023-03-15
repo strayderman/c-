@@ -3,13 +3,9 @@
 // N = 5 -> "1, 2, 3, 4, 5"
 // N = 6 -> "1, 2, 3, 4, 5, 6"
 
-// int N = int.Parse(Console.ReadLine());
+int N = int.Parse(Console.ReadLine());
 // int start = 1;
 // Concequense(N, start);
-// // for (int i = 1; i <= N; i++)
-// // {
-// //     Console.Write($"{i} ");
-// // }
 
 // void Concequense(int number, int start)
 // {
@@ -20,11 +16,11 @@
 //     }
 // }
 // 2 метод строковый
-// string Concequense(int number)
-// {
-//     if (number == 0) return String.Empty;
-//     else return $"{Concequense(number - 1)}{number} ";
-// }
+string Concequense(int number)
+{
+    if (number == 0) return String.Empty;
+    else return $"{Concequense(number - 1)}{number} ";
+}
 
 
 
@@ -43,48 +39,48 @@
 
 
 
-Console.Write("Введите число: ");
-int number = int.Parse(Console.ReadLine());
-int sum = 0;
-Console.WriteLine(SumNums(number, sum));
+// Console.Write("Введите число: ");
+// int number = int.Parse(Console.ReadLine());
+// int sum = 0;
+// Console.WriteLine(SumNums(number, sum));
 
-int SumNums(int num, int sum)
-{
-    if (num == 0) return sum;
-    else
-    {
-        sum += num % 10;
-        return SumNums(num / 10, sum);
-    }
-}
+// int SumNums(int num, int sum)
+// {
+//     if (num == 0) return sum;
+//     else
+//     {
+//         sum += num % 10;
+//         return SumNums(num / 10, sum);
+//     }
+// }
 
-Console.Clear();
-Console.Write("Введите число: ");
-int m = int.Parse(Console.ReadLine());
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int m = int.Parse(Console.ReadLine());
 
-Console.WriteLine($"{m}->{SumNumbers(m)}");
+// Console.WriteLine($"{m}->{SumNumbers(m)}");
 
-int SumNumbers(int number)
-{
-    if (number == 0) return 0;
-    return (number % 10 + SumNumbers(number / 10));
-}
+// int SumNumbers(int number)
+// {
+//     if (number == 0) return 0;
+//     return (number % 10 + SumNumbers(number / 10));
+// }
 
-// Задача 69: Напишите программу, которая на вход принимает два числа A и B,
-// и возводит число А в целую степень B с помощью рекурсии.
-// A = 3; B = 5 -> 243 (3⁵)
-// A = 2; B = 3 -> 8
+// // Задача 69: Напишите программу, которая на вход принимает два числа A и B,
+// // и возводит число А в целую степень B с помощью рекурсии.
+// // A = 3; B = 5 -> 243 (3⁵)
+// // A = 2; B = 3 -> 8
 
-Console.Write("Задайте число: ");
-int A = int.Parse(Console.ReadLine());
+// Console.Write("Задайте число: ");
+// int A = int.Parse(Console.ReadLine());
 
-Console.Write("Задайте степень: ");
-int B = int.Parse(Console.ReadLine());
+// Console.Write("Задайте степень: ");
+// int B = int.Parse(Console.ReadLine());
 
-Console.WriteLine(Pow(A, B));
+// Console.WriteLine(Pow(A, B));
 
-int Pow(int a, int b)
-{
-    if (b == 0) return 1;
-    else return a * Pow(a, b - 1);
-}
+// int Pow(int a, int b)
+// {
+//     if (b == 0) return 1;
+//     else return a * Pow(a, b - 1);
+// }
