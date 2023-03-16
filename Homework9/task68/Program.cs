@@ -9,7 +9,7 @@ Console.Write("Введите число n: ");
 int y = int.Parse(Console.ReadLine()!);
 Akkerman(x, y);
 int result = Akkerman(x, y);
-Console.WriteLine(result);
+Console.WriteLine($"m = {x}, n = {y} -> A(m,n) = {result}");
 int Akkerman(int m, int n)
 {
         if (m == 0)
